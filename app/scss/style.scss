@@ -69,13 +69,13 @@
         margin-bottom: 10px;
         font-size: 48px;
         line-height:72px;
-        font-weight: 700;
+        @include f700;
     }
     &-text{
         margin-bottom: 50px;
         font-size: 20px;
         line-height: 30px;
-        font-weight: 500;
+        @include f500;
     }
     &-form{
         max-width: 670px;
@@ -89,13 +89,13 @@
             border:none;
             font-size:14px;
             outline: none;
-            font-weight:500;
+            @include f500;
             box-shadow: 0px 1px 10px 0px rgba(124, 178, 64, 0.75); 
             padding-left: 25px;
             padding-right: 60px;
             &::placeholder{
                 color:#90a4ae;
-                font-weight:500;
+                @include f500;
             }    
           
         }
@@ -160,7 +160,7 @@
         padding: 10px 30px;
         align-items: center;
         min-height: 90px;
-        font-weight: 500;
+        @include f500;
         border-bottom:1px solid #e7ecf2;
     }
 
@@ -183,7 +183,7 @@
         &-price{
             font-size:20px;
             color:$bg;
-            font-weight:700;
+            @include f700;
 
         }
         &-info{
@@ -211,7 +211,7 @@
             }
             span{
                 font-size:14px;
-                font-weight: 500;
+                @include f500;
             }
             
         }
@@ -275,8 +275,63 @@
 //end products-slider
 
 
-
-   
-      
-
 //end products
+.advantages{
+    background-color: $bg;
+    padding: 110px 0;
+}
+.advantages__title{
+    color:#fff;
+    font-size:36px;
+    text-align: center;
+    @include f700;
+    margin-bottom: 80px;
+}
+.advantages__inner{
+    display:flex;
+    justify-content: space-between;
+}
+.advantages__item{
+    max-width: 370px;
+    text-align: center;
+    padding:  0 15px;
+    cursor: pointer;;
+  
+    &:hover{
+        .advantages__item-images{
+            background-color: $green;
+            transition:all .5s;
+        }
+    
+        
+        .advantages__item-title{
+            color:$green;
+            transition:all .5s;
+           
+        }
+         .advantages__item-images path{
+            fill:#fff;
+        }
+    }
+    &-images{
+        width: 114px;
+        height: 114px;
+        background-color: #fff;
+        border-radius:50%;
+        display:flex;
+        justify-content:center;
+        align-items: center;
+        margin:0 auto;
+        
+    }
+    &-title{
+        margin-bottom: 25px;
+        color:#fff;
+        @include f500;
+        font-size:24px;
+        margin-top: 30px;
+    }
+    &-text{
+        font-size: 15px;
+    }
+}
