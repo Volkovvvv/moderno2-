@@ -374,6 +374,7 @@
 //start tutorial
 .tutorial{
     padding:60px 0px 120px;
+   
     &__inner{
         display:flex;
         justify-content: space-between;
@@ -402,3 +403,189 @@
 }
 
 //end tutorial
+//start footer
+// .footer{
+//     background-color: $bg;
+//     padding-top: 100px;
+// }
+// .footer__inner{
+//     display:flex;
+//     justify-content: space-between;
+//     .footer-width{
+//         width: 300px;
+//     }
+//     .footer-item{
+//         &-line{
+//             background-color: #8bc34a;
+//             width: 5px;
+//             height: 2px;
+//         }
+//     }
+    
+    
+// }
+.footer{
+    background-color:$bg;
+    &__inner{
+        display:flex;
+        justify-content:space-between;
+        padding: 100px 0px 80px;
+    }
+}
+.footer__copy{
+    border-top:1px solid #424d53;
+    padding: 25px 0px;
+}
+.footer__copy-text{
+    text-align:center;
+    font-size:15px;
+    color:#919699;
+}
+.footer__col{
+    max-width: 270px;
+    width: 100%;
+    &-menu{
+        max-width: 220px;
+    }
+    &-title{
+        font-size:22px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+        color:#fff;
+        padding-bottom: 22px;
+        margin-bottom: 30px;
+        position: relative;
+        &::after{
+            content:'';
+            position: absolute;
+            bottom: 0;
+            left: 2px;
+            width: 51px;
+            height: 3px;
+            background-color: $green;
+        }
+    }
+    &-text{
+        color:#b7c3c8;
+        margin-bottom: 30px;
+    }
+   
+}
+.footer__info{
+    margin-top: 18px;
+    color:#fff;
+    @include f500;
+    position: relative;
+    padding-left: 30px;
+    &::before{
+        position: absolute;
+        color:$green;
+        left: 0;
+        content:'\f041';
+        font-family:'icomoon';
+        font-size:18px;
+    }
+    &-phone{
+    &::before{
+        content:'\f095';  
+    }
+    }
+}
+.footer__col-list{
+    a{
+        margin-bottom: 15px;
+        color:#b7c3c8;
+        padding-left: 22px;
+        position: relative;
+        &::before{
+            content:'\f105';
+            position:absolute;
+            left: 0;
+            font-size:18px;
+            color:$green;
+            font-family:'icomoon';
+        }
+    }
+}
+.footer__social-link{
+    margin-bottom: 35px;
+    li{
+        display:inline-block;
+        & + li{
+            margin-left: 7px;
+        }
+    }
+    a{
+        width: 28px;
+        height: 28px;
+        background-image: url('../images/content/css_sprites.png');
+    }
+}
+.link-twitter{
+    background-position:-28px -0;
+}
+.link-youtube{
+    background-position: -0 -28px;
+}
+.link-pinterest{
+    background-position: -28px -28px;
+}
+.link-linkedin{
+    background-position: -56px -0px;
+}
+.footer__form-title{
+    margin-bottom: 15px;
+    color:#fff;
+    font-size:20px;
+
+}
+.footer__form{
+    position: relative;
+    input{
+        border:none;
+        background-color: #2f3c43;
+        display:block;
+        width:100%;
+        height: 40px;
+        color:#fff;
+        padding-left: 13px;
+        padding-right: 50px;
+        color:#697378;
+        
+        &::placeholder{
+            color:#697378;
+        }
+    }
+    button{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 43px;
+        background-color: $green;
+        border:none;
+        cursor: pointer;
+        height: 40px;
+        &::before{
+            content:'\f124';
+            font-family: 'icomoon';
+            color:#fff;
+            top:10px;
+            left: 14px;
+            font-size:20px;
+            position: absolute;
+
+        }
+    }
+}
+.Rectangle_62 {
+    background-color: rgb(47, 60, 67);
+    position: absolute;
+    left: 1283px;
+    top: 5224px;
+    width: 267px;
+    height: 46px;
+    z-index: 10;
+  }
+  
+
+//end footer
